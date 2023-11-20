@@ -40,9 +40,9 @@ export default function Projects() {
       open: "",
     },
     Portfolio: {
-      desc: "Something",
-      techStack: "Python, Java",
-      link: "wwww.sss",
+      desc: "A website dedicated to showcasing my projects and my developer skills. Integrated with an interactive 3D model that I built using Blender.",
+      techStack: "React, HTML, CSS, React-Three-Fiber, Blender",
+      link: "https://github.com/uavila1623/Uriel",
       open: "",
     },
   };
