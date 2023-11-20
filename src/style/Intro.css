@@ -1,0 +1,99 @@
+.intro-con {
+  max-width: 1100px;
+  min-height: 60vh;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+#typewriter-container {
+  font-family: "Courier New", monospace;
+  font-size: 60px;
+  color: #90fc6b;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+/* Style the text as it's being typed */
+#typewriter-container .Typewriter__cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#sub-title {
+  font-family: "Courier New", monospace;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  word-spacing: -4px;
+}
+#intro-desc {
+  font-family: "Courier New", monospace;
+  color: white;
+  font-size: 22px;
+  margin-left: 20px;
+  word-spacing: -4px;
+}
+#intro-contact {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Courier New", monospace;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #90fc6b;
+  color: #90fc6b;
+  border-radius: 4px;
+}
+
+#intro-contact:hover {
+  background-color: black;
+}
+#email-cont {
+  text-align: center;
+  padding: 20px;
+}
+/* Existing CSS above this point remains unchanged */
+
+/* Media query for screens up to a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .intro-con {
+    padding: 10px;
+  }
+
+  #typewriter-container {
+    font-size: 40px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  #sub-title {
+    font-size: 24px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  #intro-desc {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  #intro-contact {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  #email-cont {
+    padding: 10px;
+  }
+}

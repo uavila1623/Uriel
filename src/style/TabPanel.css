@@ -1,0 +1,99 @@
+.tab-panel {
+  display: flex;
+  background-color: #2a373b;
+  border: 3px solid #90fc6b;
+  width: 90%;
+  margin-left: 20px;
+  border-radius: 16px;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-direction: column; /* Display tabs vertically */
+}
+
+.tab-buttons button {
+  color: white;
+  font-family: "Courier New", monospace;
+  background: transparent; /* Make the tab background transparent */
+  margin-bottom: 5px; /* Add some margin between vertical tabs */
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid #90fc6b;
+  padding: 10px; /* Add padding to the tabs for better clickability */
+  border-radius: 5px; /* Add some border radius for a softer look */
+  cursor: pointer;
+}
+
+.tab-buttons button.active {
+  background: black; /* Style the active tab differently */
+}
+
+.tab-content {
+  margin-left: 10px; /* Add some margin to separate tabs from content */
+}
+#pos-title {
+  font-family: "Courier New", monospace;
+  font-size: 28px;
+  color: #90fc6b;
+  margin-left: 20px;
+}
+#time-frame {
+  font-family: "Courier New", monospace;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  word-spacing: -4px;
+}
+#pos-desc {
+  font-family: "Courier New", monospace;
+  color: white;
+  font-size: 18px;
+  word-spacing: -4px;
+}
+#pos-desc ul {
+  list-style-type: square;
+}
+
+#pos-desc li {
+  padding: 10px;
+}
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .tab-panel {
+    flex-direction: column; /* Stack tabs vertically */
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tab-buttons {
+    flex-direction: row; /* Display tabs horizontally */
+  }
+
+  .tab-buttons button {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .tab-content {
+    margin-left: 0; /* Reset margin for content */
+  }
+
+  #pos-title {
+    font-size: 24px; /* Decrease title font size */
+    margin-left: 10px;
+  }
+
+  #time-frame {
+    font-size: 18px; /* Decrease time frame font size */
+    margin-left: 10px;
+  }
+
+  #pos-desc {
+    font-size: 16px; /* Decrease description font size */
+  }
+
+  #pos-desc li {
+    padding: 5px; /* Reduce padding for list items */
+  }
+}

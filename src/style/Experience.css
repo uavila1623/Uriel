@@ -1,0 +1,28 @@
+.exp-cont {
+  max-width: 1100px;
+  height: auto;
+  text-align: left;
+  padding: 20px;
+}
+#exp-title {
+  font-family: "Courier New", monospace;
+  color: #90fc6b;
+  font-size: 30px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  word-spacing: -4px;
+}
+
+@media (max-width: 768px) {
+  .exp-cont {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #exp-title {
+    font-size: 24px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+}

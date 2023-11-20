@@ -1,0 +1,156 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 84%;
+  bottom: 35%;
+  background-color: #e1d0b5;
+  width: 150px;
+  height: 340px;
+  padding-right: 30px;
+  padding-top: 20px;
+  overflow: auto;
+  border-radius: 8px;
+}
+#nav-buttons ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#nav-buttons li {
+  display: inline;
+}
+
+#nav-buttons a {
+  display: inline-block;
+  width: 90px; /* Set the width of the buttons */
+  height: 40px; /* Set the height of the buttons */
+  color: #fff; /* Set the text color */
+  text-decoration: none;
+  border: 2px solid black; /* Add a border for the button */
+  border-radius: 5px; /* Round the corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+#abt-button {
+  background-color: green;
+}
+#mdl-button {
+  background-color: red;
+}
+#exp-button {
+  background-color: blue;
+}
+#prj-button {
+  background-color: orange;
+}
+#nav-buttons a:hover {
+  background-color: black; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+#screen {
+  height: 90px;
+  width: 100px;
+  border-radius: 5px;
+  background-image: url("assets/worldImg.jpeg");
+  background-size: cover;
+  margin-left: 30px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: 1; /* Set a z-index value for the #screen element */
+}
+
+#screen span {
+  color: #90fc6b;
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal;
+  margin-top: 32px;
+  position: relative; /* Add position relative to establish a stacking context */
+  z-index: 2; /* Set a higher z-index to make sure the text appears on top of #screen */
+  animation: blink 2s linear infinite;
+}
+
+#screen-cont {
+  position: relative;
+  z-index: 1; /* Set a z-index for #screen-cont (could be the same as #screen) */
+}
+
+.radar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  width: 130px;
+  background: #000000 url("/assets/worldImg.jpeg");
+  background-size: cover;
+}
+
+.radar li:nth-child(2) {
+  transform: rotate(-90deg);
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: rgba(0, 255, 0, 1);
+}
+
+.radar li:nth-child(4) {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  height: 1px; /* Set the height to 1px for both */
+  width: 100%; /* Make the horizontal lines span the full width */
+  background: rgba(0, 255, 0, 1);
+}
+.radar li:nth-child(5) {
+  list-style: none;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 60px;
+  height: 40px;
+  transform-origin: bottom left;
+  background: linear-gradient(45deg, #00ff00, transparent 50%);
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* Existing CSS above this point remains unchanged */
+
+/* Media query for screens up to a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}

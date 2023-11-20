@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 980vh;
+}
+#content {
+  text-align: center;
+  background-color: #363636;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 350vh;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-height: 100%;
+  }
+
+  #content {
+    min-height: 100vh;
+  }
+}

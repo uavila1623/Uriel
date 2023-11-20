@@ -1,0 +1,26 @@
+.link-cont {
+  max-width: 1100px;
+  height: auto;
+  text-align: center;
+  margin-top: -40px;
+}
+#git-link {
+  padding-right: 10px;
+  color: #90fc6b;
+}
+#git-link:hover {
+  color: #6634fe;
+}
+#linkedIn-link {
+  color: #90fc6b;
+}
+#linkedIn-link:hover {
+  color: #6634fe;
+}
+@media (max-width: 768px) {
+  .link-cont {
+    max-width: 100%; /* Adjust the width to fit smaller screens */
+    text-align: center; /* Reset left margin */
+    margin-top: 10px;
+  }
+}

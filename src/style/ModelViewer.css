@@ -1,0 +1,15 @@
+.c-wrapper {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  max-width: 1000px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Other styling properties */
+}
+
+#loading-mess {
+  color: #90fc6b;
+}
