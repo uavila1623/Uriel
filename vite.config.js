@@ -5,7 +5,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["@fortawesome/free-regular-svg-icons"],
+      external: [
+        // Add the FontAwesome icon libraries here
+        /^@fortawesome\/free-regular-svg-icons/,
+        /^@fortawesome\/free-solid-svg-icons/,
+        // Add other FontAwesome libraries if used
+      ],
     },
   },
 });
