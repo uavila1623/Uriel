@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 * linguist-language=JavaScript
+=======
+* linguist-language=Unsure
+*.jsx linguist-language=React
+>>>>>>> updateProjects
